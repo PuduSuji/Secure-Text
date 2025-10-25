@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EncryptActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        app:title="Encrypt Files"
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/text_bg"
+        android:backgroundTint="@color/black"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:id="@+id/itemScroll"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="253FHSYESB353cnjdXtu,s"
+            android:padding="5dp"
+            android:textColor="#ff9900"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/textEncryptedAnswer"
+            />
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select File"
+            android:background="@drawable/outline_bg"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:id="@+id/txtSelectFile"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected file something"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_red_light"
+            android:id="@+id/txtFileName"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encrypt File"
+            android:id="@+id/btnEncrypt"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Re Encrypt File"
+            android:id="@+id/btnReEncrypt"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+
+
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Key Pair"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnGenerateKey"
+            android:visibility="gone"
+            tools:visibility="visible"
+
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save and Send To Server"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnSaveFile"
+            android:visibility="gone"
+            tools:visibility="visible"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        android:text="Split Files"-->
+<!--        android:id="@+id/btnSplit"-->
+<!--        />-->
+
+
+
+</RelativeLayout>
